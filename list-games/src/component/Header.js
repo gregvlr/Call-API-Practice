@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
+import './Header.css'
 
 
 export default function Header (props) {
@@ -44,15 +45,15 @@ export default function Header (props) {
     
 
 return (
-        <h1>
+        <h1 className="header-title">
             Welcome to {title}
-            <input
+            {/* <input
             className="button-best-rank"
             type="button"
             value={bestGame ? "all-games" : "top Games"}
             onClick={handleClickButton}>
 
-            </input>
+            </input> */}
         </h1>
     )
 }
